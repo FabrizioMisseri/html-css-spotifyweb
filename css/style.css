@@ -21,6 +21,10 @@ ul{
     list-style-type: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 
 
 /* COMMON */
@@ -49,7 +53,8 @@ main{
 #sidebar{
     width: 220px;
     background-color: black;
-    padding: 2rem;
+    padding: 2rem 2rem .7rem;
+    font-weight: bolder;
 }
 
 #box{
@@ -86,6 +91,10 @@ main{
     letter-spacing: 2px;
 }
 
+#plus-icon{
+    font-size: 3rem;
+}
+
 
 
 /* UTILITIES */
@@ -96,6 +105,10 @@ main{
 
 .flex-wrap{
     flex-wrap: wrap;
+}
+
+.column{
+    flex-direction: column;
 }
 
 .just-end{
@@ -126,15 +139,53 @@ main{
     margin-top: 2rem;
 }
 
+.mb-3{
+    margin-top: 3rem;
+}
+
 .mt-1{
     margin-top: 1rem;
 }
+
+.mt-05{
+    margin-top: .5rem;
+}
+
+.mr-1{
+    margin-right: 1rem;
+}
+
 
 
 /* SIDEBAR */
 #sidebar li{
     margin: .5rem 0;
+    font-size: .9rem;
 }
+
+#sidebar .prima-lista li:first-child img{
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#sidebar .prima-lista li img ,
+#sidebar .oggetti_sotto img{
+    width: 15%;
+}
+
+#sidebar #profile-pic{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+#sidebar img ,
+#sidebar span{
+    vertical-align: middle;
+}
+
 
 @media screen and (max-width: 600px) {
 
