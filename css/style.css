@@ -37,6 +37,7 @@ footer{
     left: 0;
     bottom: 0;
     z-index: 1000;
+    padding: 0 1rem;
 }
 
 main{
@@ -90,6 +91,10 @@ main{
     justify-content: flex-end;
 }
 
+.just-between{
+    justify-content: space-between;
+}
+
 .align-center{
     align-items: center;
 }
@@ -119,3 +124,14 @@ main{
     }
 
 }
+/* / SIDEBAR */
+
+
+/* FOOTER */
+footer div{
+    /* debug */
+    height: 50px;
+    width: 22%;
+    background-color: orange;
+}
+/* / FOOTER */
