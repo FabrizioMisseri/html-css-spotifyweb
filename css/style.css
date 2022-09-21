@@ -126,6 +126,10 @@ main{
     margin-top: 2rem;
 }
 
+.mt-1{
+    margin-top: 1rem;
+}
+
 
 /* SIDEBAR */
 #sidebar li{
@@ -158,8 +162,43 @@ footer div{
 
 /* CONTAINER */
 .container nav li{
-    line-height: 1.8rem;
+    margin-bottom: 1.6rem;
     margin-right: 2rem;
     font-weight: 600;
 }
+
+.container .item h1{
+    padding: 0 1rem;
+}
+
+.container .card{
+    width: calc(100% / 6);
+    padding: 1rem;
+    /* debug */
+    background-color: green;
+    height: 140px;
+    border: 1px solid black;
+}
+
+.container .card > div{
+    /* debug */
+    background-color: orange;
+}
+
+@media screen and (max-width: 1100px) {
+
+.container .card{
+    width: calc(100% / 4);
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .container .card{
+        width: calc(100% / 2);
+    }
+    
+}
+
 /* / CONTAINER */
