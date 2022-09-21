@@ -11,6 +11,11 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 
 
 /* COMMON */
@@ -43,6 +48,8 @@ main{
 #box{
     width: 80%;
     background-color: #1A212F;
+    overflow-y: auto;
+    padding-top: calc(80px);
 }
 
 #box header{
@@ -52,7 +59,17 @@ main{
     right: 0;
     top: 0;
     z-index: 500;
-    background-color: #05070B;
+    background-color: rgba(5, 7, 11, 0.5);
+    padding: 0 2rem;
+    overflow-x: auto;
+}
+
+.btn{
+    padding: .4rem 1rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1rem;
 }
 
 
@@ -61,4 +78,16 @@ main{
 
 .flex{
     display: flex;
+}
+
+.just-end{
+    justify-content: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.text-white{
+    color: white;
 }
