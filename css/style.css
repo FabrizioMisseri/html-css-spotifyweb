@@ -52,6 +52,7 @@ main{
 
 #sidebar{
     width: 220px;
+    height: 100%;
     background-color: black;
     padding: 2rem 2rem .7rem;
     font-weight: bolder;
@@ -59,6 +60,7 @@ main{
 
 #box{
     width: calc(100% - 220px);
+    height: 100%;
     background-color: #1A212F;
     overflow-y: auto;
     padding-top: calc(70px);
@@ -78,6 +80,7 @@ main{
 
 #box .container{
     width: 100%;
+    max-width: 1250px;
     padding: 1rem;
     height: calc(100% - 80px);
 }
@@ -89,6 +92,7 @@ main{
     border-radius: 20px;
     font-size: .8rem;
     letter-spacing: 2px;
+    display: inline-block;
 }
 
 #plus-icon{
@@ -201,15 +205,6 @@ main{
 /* / SIDEBAR */
 
 
-/* FOOTER */
-footer div{
-    /* debug */
-    height: 50px;
-    width: 22%;
-    background-color: orange;
-}
-/* / FOOTER */
-
 
 /* CONTAINER */
 .container nav li{
@@ -253,3 +248,23 @@ footer div{
 }
 
 /* / CONTAINER */
+
+
+
+/* FOOTER */
+footer div{
+    /* debug */
+    height: 50px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+footer .player-sx ,
+footer .player-dx{
+    width: 250px;
+}
+
+footer .player{
+    width: 40%;
+}
+/* / FOOTER */
