@@ -131,6 +131,10 @@ main{
     align-items: center;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .text-white{
     color: white;
 }
@@ -178,8 +182,8 @@ main{
 }
 
 #sidebar #profile-pic{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: contain;
     border-radius: 50%;
     background-color: gray;
@@ -190,15 +194,39 @@ main{
     vertical-align: middle;
 }
 
+#sidebar .hidden-down ,
+#sidebar .hidden-up{
+    display: none;
+}
+
 
 @media screen and (max-width: 600px) {
 
     #sidebar{
         width: 60px;
+        padding: 1rem;
     }
 
     #box , #box header{
         width: calc(100% - 60px);
+    }
+
+    #sidebar .oggetti_sotto ,
+    #sidebar .oggetti_sopra{
+        display: none;
+    }
+
+    #sidebar .hidden-down ,
+    #sidebar .hidden-up{
+        display: block;
+    }
+
+    #sidebar li{
+        width: 100%;
+    }
+
+    #sidebar .hidden-down li:first-child img{
+        width: 60%;
     }
 
 }
