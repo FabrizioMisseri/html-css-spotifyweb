@@ -158,6 +158,14 @@ main{
     color: gray;
 }
 
+.size08{
+    font-size: .8rem;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
 .mt-2{
     margin-top: 2rem;
 }
@@ -273,23 +281,16 @@ main{
     transform: translate(-50% , 0);
 }
 
-.container .item h1{
+.container .item h1 ,
+.container .item > p{
     padding: 0 1rem;
 }
 
 .container .card{
     width: calc(100% / 6);
     padding: 1rem;
-    /* debug */
-    background-color: green;
-    height: 140px;
-    border: 1px solid black;
 }
 
-.container .card > div{
-    /* debug */
-    background-color: orange;
-}
 
 @media screen and (max-width: 1100px) {
 
