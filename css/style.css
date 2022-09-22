@@ -170,7 +170,7 @@ main{
     margin-top: 2rem;
 }
 
-.mb-3{
+.mt-3{
     margin-top: 3rem;
 }
 
@@ -184,6 +184,10 @@ main{
 
 .mr-1{
     margin-right: 1rem;
+}
+
+.mr-05{
+    margin-right: .5rem;
 }
 
 
@@ -319,16 +323,26 @@ main{
 
 
 /* FOOTER */
-footer div{
-    /* debug */
-    height: 50px;
-    background-color: orange;
-    border: 1px solid black;
-}
+/* footer span ,
+footer img{
+    vertical-align: middle;
+} */
 
 footer .player-sx ,
 footer .player-dx{
-    width: 250px;
+    width: 220px;
+}
+
+footer .player-sx img{
+    width: 45px;
+}
+
+@media screen and (max-width: 700px){
+    footer .player-sx > div:last-child{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 }
 
 footer .player{
