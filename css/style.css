@@ -99,6 +99,21 @@ main{
     font-size: 3rem;
 }
 
+#underline , #leftline{
+    background-color: #6EA31E;
+}
+
+#underline{
+    height: 2px;
+    width: 2rem;
+}
+
+#leftline{
+    width: 2px;
+    height: 2rem;
+}
+
+
 
 
 /* UTILITIES */
@@ -169,6 +184,7 @@ main{
 #sidebar li{
     margin: .5rem 0;
     font-size: .9rem;
+    position: relative;
 }
 
 #sidebar .prima-lista li:first-child img{
@@ -179,6 +195,13 @@ main{
 #sidebar .prima-lista li img ,
 #sidebar .oggetti_sotto img{
     width: 15%;
+}
+
+#sidebar li #leftline{
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    transform: translate(0 , -50%);
 }
 
 #sidebar #profile-pic{
@@ -239,6 +262,15 @@ main{
     margin-bottom: 1.6rem;
     margin-right: 2rem;
     font-weight: 600;
+    font-size: .9rem;
+    position: relative;
+}
+
+.container nav #underline{
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50% , 0);
 }
 
 .container .item h1{
