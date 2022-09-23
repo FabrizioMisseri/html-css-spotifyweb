@@ -352,6 +352,35 @@ header div:hover .btn{
     }
     
 }
+
+    /* effetto velo sull' immagine */
+.uncovered-img{
+    position: relative;
+}
+
+.dark-veil{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+    font-size: 3rem;
+}
+
+.uncovered-img:hover .dark-veil{
+    display: block;
+}
+
+.dark-veil span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
 /* / CONTAINER */
 
 
