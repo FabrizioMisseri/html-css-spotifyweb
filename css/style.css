@@ -114,6 +114,16 @@ main{
     height: 2rem;
 }
 
+    /* effetti hover ai links */
+a:hover{
+    color: white;
+}
+
+#special-text:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
 
 
 
